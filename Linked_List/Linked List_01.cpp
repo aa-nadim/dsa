@@ -1,7 +1,6 @@
-///.................................///
-///...BISMILLAHIR RAHMANIR RAHEEM...///
-///...............Nadim.............///
-///.................................///
+///................................Nadim.................................///
+///..............Noakhali Science and Technology University..............///
+///........Department of Information and Communication Engineering.......///
 #include<bits/stdc++.h>
 #include<cstring>
 #include<cmath>
