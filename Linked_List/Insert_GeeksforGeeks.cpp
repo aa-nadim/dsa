@@ -65,8 +65,8 @@ int main(){
 
 	insertAfter(head->next, 8);
 
-    cout<<"head->next = "<<head->next<<endl;
-    cout<<"head = "<<head<<endl;
+    ///cout<<"head->next = "<<head->next<<endl;
+    ///cout<<"head = "<<head<<endl;
 	cout<<"Created Linked list is: ";
     printList(head);
 
