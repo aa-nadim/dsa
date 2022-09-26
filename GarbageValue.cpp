@@ -2,14 +2,9 @@
 ///..............Noakhali Science and Technology University..............///
 ///........Department of Information and Communication Engineering.......///
 #include<bits/stdc++.h>
-#include<iostream>
-#include<climits>
 using namespace std;
-#define    IOS            ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-#define    MX             1000000000
-#define    fill(a,b)      memset(a,b,sizeof(a))
-#define    gcd(a,b)     __gcd(a,b)
-#define    lcm(a,b)       (a*(b/gcd(a,b)))
+
+const int N = 1e8 ;
 #define    ll             long long int
 
 int main(){
@@ -18,14 +13,20 @@ int main(){
         freopen("outputf.in", "w", stdout);
 #endif
     //ll test;cin>>test;while(test--)
-        {
-
-            int a,b=9;
-            cin>>a>>b;
-            double x;
-            x=(double)(a+b)/2;
-            cout<<x<<endl;
-
+    {
+        vector<int>v;
+        v.push_back(2);
+        for(int i=3;i<=N;i++){
+            bool ok=true;
+            for(int j=2;j*j<=i; j++){
+                if(i%j==0){
+                    ok=false;break;
+                }
+            }
+            if(ok)v.push_back(i);
         }
+        for(int i=0;i<v.size();i+=100)cout<<v[i]<<endl;
+    }
+
 return 0;
 }
