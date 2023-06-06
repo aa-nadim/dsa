@@ -12,20 +12,22 @@ int main(){
         freopen("inputf.in", "r", stdin);
         freopen("outputf.in", "w", stdout);
 #endif
-    //ll test;cin>>test;while(test--)
+    ll test;test=1;
+    cin>>test;
+    while(test--)
     {
-        vector<int>v;
-        v.push_back(2);
-        for(int i=3;i<=N;i++){
-            bool ok=true;
-            for(int j=2;j*j<=i; j++){
-                if(i%j==0){
-                    ok=false;break;
-                }
-            }
-            if(ok)v.push_back(i);
+        map<char, int> mp;
+        map<char, int>::iterator it;
+        string s;cin>>s;
+        int n=s.length();
+        for(int i=0;i<n;i++){
+            mp[s[i]]++;
         }
-        for(int i=0;i<v.size();i+=100)cout<<v[i]<<endl;
+        //cout<<mp.size()<<endl;
+        if((n%2==1 && mp.size()>2) || (n%2==0 && mp.size()>1))cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
+
+
     }
 
 return 0;

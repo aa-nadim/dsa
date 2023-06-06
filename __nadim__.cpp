@@ -4,20 +4,13 @@ const int N = 1e6;
 #define    ll             long long int
 int main()
 {
-    int te=1;//cin>>t;
+    int te=1;
+    cin>>te;
     while(te--){
-        ll n;cin>>n;
-        ll a[n],t[n],b[n];
-        for(int i=0;i<n;i++){
-            cin>>a[i];//b[i]=a[i];
-        }
-        for(int i=0;i<n;i++){
-            cin>>t[i];
-            b[i]=a[i]+t[i];
-        }
-        sort(b,b+n);
-        //int x=(b[0]+b[n-1])/2;
-        cout<<(b[0]+b[n-1])/2<<endl;
+        int n;cin>>n;
+        for(int i=1;i<=n;i++){
+            cout<<2*i<<" ";
+        }cout<<endl;
     }
     return 0;
 }
