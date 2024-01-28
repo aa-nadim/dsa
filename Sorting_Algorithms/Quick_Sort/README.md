@@ -1,6 +1,10 @@
+# Quick Sort
+
+Quick Sort [Visual Explanation] ===> `https://www.youtube.com/watch?v=WprjBK0p6rw&t=4s`
+
+```
 #include<iostream>
 using namespace std;
-
 
 int partitionOfArray(int arr[], int low, int high)
 {
@@ -39,3 +43,5 @@ int main()
     cout<<endl;
 	return 0;
 }
+
+```
